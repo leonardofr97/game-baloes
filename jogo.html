@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Estourando balões</title>
+		<script src="jogo.js">
+			// script js contendo toda a lógica, mecanica do jogo
+		</script>
+	</head>
+	<!-- assim que a page for carregada, iniciaJogo() é chamada -->
+	<body onload="iniciaJogo()">
+		<!-- div que conterá o jogo em si -->
+		<div style="float: left; width: auto; height: 500px; background: #FFF; border: solid 1px #A2A2A2; margin-right: 5px;">
+			<!-- montando o painel lateral -->
+			<table border="0">
+				<tr>
+					<td>
+						<img src="imagens/balao_azul_grande.png">
+					</td>
+					<td>
+						<!-- status dos baloes a estourar -->
+						<span id="baloes_inteiros" style="font-size: 40px;"></span>
+					</td>
+				</tr>
+			</table>
+			<table border="0">
+				<tr>
+					<td>
+						<img src="imagens/balao_azul_grande_estourado.png">
+					</td>
+					<td>
+						<!-- status dos baloes já estourados -->
+						<span id="baloes_estourados" style="font-size: 40px;"></span>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<!-- terá o tamanho da img do cronometro -->
+			<table border="0" style="width: 140px; height: 132px;">
+				<tr>
+					<td style="background: url('imagens/cronometro.png'); text-align: center;">
+						<span id="cronometro" style="color: red; font-size: 30px; "></span>
+					</td>
+					
+				</tr>
+			</table>
+			<!-- botão reiniciar jogo, window.location.reload recarrega a pagina-->
+			<img src="imagens/reiniciar.jpg" style="width: 130px; height: 130px; margin-top: 20px; margin-left: 5px;" onclick="window.location.reload()">
+		</div>
+		<!-- montando o cenário -->
+		<div id="cenario" style="float: left; width: 600px; height: 500px; background: url('imagens/cenario.png'); background-position: bottom;"></div>
+	</body>
+	
+</html>
