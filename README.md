@@ -1,2 +1,2 @@
-# projeto-game
-Projeto Game de estourar balões com JavaScript
+# game-baloes
+Game de estourar balões com JavaScript
